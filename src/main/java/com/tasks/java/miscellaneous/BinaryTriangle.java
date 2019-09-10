@@ -26,7 +26,7 @@ public class BinaryTriangle {
 		return decimal;
 	}
 
-	public static String toBinary(int decimal){
+	private static String toBinary(int decimal){
 		StringBuilder binary = new StringBuilder();
 		int a;
 		int count;

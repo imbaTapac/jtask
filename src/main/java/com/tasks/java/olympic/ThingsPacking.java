@@ -1,7 +1,5 @@
 package com.tasks.java.olympic;
 
-import static java.lang.Thread.currentThread;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -43,7 +41,7 @@ public class ThingsPacking {
 				prevWeight = thingWeight;
 			} else {
 				System.out.println("Things must goes in DESC order");
-				currentThread().stop();
+				System.exit(0);
 				break;
 			}
 		}

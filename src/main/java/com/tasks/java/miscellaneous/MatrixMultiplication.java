@@ -44,7 +44,7 @@ public class MatrixMultiplication {
 		printMatrix(result);
 	}
 
-	private static void printMatrix(int[][] matrix) {
+	public static void printMatrix(int[][] matrix) {
 		for(int[] row : matrix) {
 			System.out.println(Arrays.toString(row));
 		}

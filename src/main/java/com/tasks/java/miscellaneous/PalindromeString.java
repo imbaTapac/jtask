@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 
 /**
  * If the string and the reverse of string are same then we say string is palindrome.
- *
+ * <p>
  * If string is "level" then the output should be: palindrome
- *
- *
- *
+ * <p>
+ * <p>
+ * <p>
  * If string is "helloworld" then the output should be: not a palindrome
  */
 public class PalindromeString {
@@ -28,14 +28,15 @@ public class PalindromeString {
 		}
 		System.out.println("Reverse string is :");
 		System.out.println(strr);
-		if(strn.equals(strr)){
+		if(strn.equals(strr)) {
 			isPalindrome = true;
 		}
 
-		if(isPalindrome)
-			System.out.print("palindrome");
-		else
-			System.out.print("not a palindrome");
+		if(isPalindrome) {
+			System.out.println("palindrome");
+		} else {
+			System.out.println("not a palindrome");
+		}
 
 	}
 }

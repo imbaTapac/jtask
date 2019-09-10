@@ -19,8 +19,7 @@ import java.util.Scanner;
 
 public class SexyPairs {
 	public static void main(String[] args) {
-		int max = 0;
-		int start = 5;
+		int max;
 		System.out.println("Enter Maximum No.:");
 		Scanner sc = new Scanner(System.in);
 		max = sc.nextInt();
@@ -30,7 +29,7 @@ public class SexyPairs {
 	}
 
 	public static String sexyPrime(int l, int r) {
-		String sexyPrime = "";
+		StringBuilder sexyPrime = new StringBuilder();
 		boolean[] prime = new boolean[r + 1];
 
 		Arrays.fill(prime, true);
@@ -49,7 +48,10 @@ public class SexyPairs {
 		// i + 6 are prime or not.
 		for(int i = l; i <= r - 6; i++)
 			if(prime[i] && prime[i + 6])
-				sexyPrime += "(" + i + " " + (i + 6) + ") ";
-		return sexyPrime;
+				sexyPrime.append("(")
+						.append(i)
+						.append((i+6))
+						.append(") ");
+		return sexyPrime.toString();
 	}
 }

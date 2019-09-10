@@ -9,11 +9,15 @@ import java.util.Scanner;
 public class DecimalToBinary {
 	public static void main(String[] args) {
 		int decimal;
-		int count = 0;
-		int a;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your decimal");
 		decimal = sc.nextInt();
+		System.out.println(toBinary(decimal));
+	}
+
+	public static String toBinary(int decimal){
+		int a;
+		int count = 0;
 		StringBuilder binary = new StringBuilder();
 		while(decimal > 0) {
 			a = decimal % 2;
@@ -23,6 +27,6 @@ public class DecimalToBinary {
 			binary.append(a);
 			decimal = decimal / 2;
 		}
-		System.out.println(binary.reverse().toString());
+		return binary.reverse().toString();
 	}
 }

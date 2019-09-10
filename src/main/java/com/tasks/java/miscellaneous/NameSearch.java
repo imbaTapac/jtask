@@ -13,28 +13,28 @@ import java.util.Scanner;
  * harry potter
  */
 public class NameSearch {
-	public static String names[]={"harry","michael","will","tom","jackie"};
-	public static String surnames[]={"potter","jackson","smith","cruise","chan"};
-	public static Map<String,String> fullNames = new HashMap<>();
+	private static String[] names = {"harry", "michael", "will", "tom", "jackie"};
+	private static String[] surnames = {"potter", "jackson", "smith", "cruise", "chan"};
+	private static Map<String, String> fullNames = new HashMap<>();
 
-	public static void main(String a[]) throws Exception
-	{
-		Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		String name;
-
-
 		System.out.println("Enter the name:");
-		name=sc.next();
-		if(fullNames.containsKey(name)){
-			System.out.println("Full name of the celebraty is:");
-			System.out.println(name + " "+fullNames.get(name));
+		name = sc.next();
+		if(fullNames.containsKey(name)) {
+			System.out.println("Full name of the celebrity is:");
+			System.out.println(name + " " + fullNames.get(name));
+		} else {
+			System.out.println("Wrong celebrity name");
+			System.exit(0);
 		}
 	}
 
 	static {
 		int index = 0;
-		for(String s:names) {
-			fullNames.put(s,surnames[index]);
+		for(String s : names) {
+			fullNames.put(s, surnames[index]);
 			index++;
 		}
 	}
