@@ -41,10 +41,10 @@ public class DayByDate {
 
 	public static void main(String[] args) {
 		SimpleDateFormat sdf = new SimpleDateFormat();
-		sdf.applyPattern("dd/mm/yyyy");
+		sdf.applyPattern("dd/MM/yyyy");
 		String date = "";
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your date (format dd/mm/yyyy): ");
+		System.out.println("Enter your date (format dd/MM/yyyy): ");
 		date = sc.nextLine();
 		try {
 			checkDate(date);

@@ -31,10 +31,8 @@ public class GrayCode {
 	public static void main(String[] args) {
 		int gCode;
 		Scanner sc = new Scanner(System.in);
-		StringBuilder sb = new StringBuilder();
 		System.out.println("Enter your number of gray code :");
 		gCode = sc.nextInt();
-		int num = 0;
 		generateGrayCode(gCode);
 
 	}

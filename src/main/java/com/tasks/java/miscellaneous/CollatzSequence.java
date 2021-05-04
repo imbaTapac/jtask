@@ -35,7 +35,7 @@ public class CollatzSequence {
 				sb.append(" ")
 						.append(decimal);
 			}
-			System.out.println("Collatz Sequence is :" + sb.toString());
+			System.out.println("Collatz Sequence is : " + sb.toString());
 		} else {
 			System.exit(0);
 		}
